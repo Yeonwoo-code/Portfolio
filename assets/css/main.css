@@ -1,3 +1,44 @@
+/* 메뉴 스타일 */
+nav ul.menu {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul.menu li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul.menu li a:hover {
+  color: #007BFF;
+}
+
+/* 헤더 중앙 정렬 및 프로필 이미지 스타일 */
+.header-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.header-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.header-content img.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* 카테고리 버튼 */
 .category-buttons {
   margin-bottom: 20px;
 }
@@ -15,6 +56,7 @@
   background-color: #0056b3;
 }
 
+/* 프로젝트 카드 스타일 */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -40,8 +82,6 @@
 .project-card.hidden {
   display: none;
 }
-
-
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
