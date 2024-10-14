@@ -3,6 +3,11 @@ layout: default
 title: "My Portfolio"
 ---
 
+{% include_relative header.md %}
+
+<h1>About LEE</h1>
+{% include_relative about.md %}
+
 <h1>My Projects</h1>
 
 <!-- 카테고리 필터 버튼 -->
