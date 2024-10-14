@@ -19,6 +19,35 @@
   background-color: #0056b3;
 }
 
+/* 네비게이션 바 스타일 */
+nav {
+  background-color: #333; /* 배경 색상 */
+  padding: 10px 0;
+}
+
+nav ul.menu {
+  list-style: none; /* 목록 스타일 제거 */
+  padding: 0;
+  margin: 0;
+  text-align: center; /* 메뉴 중앙 정렬 */
+}
+
+nav ul.menu li {
+  display: inline; /* 가로로 배치 */
+  margin: 0 15px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: white; /* 링크 색상 */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+nav ul.menu li a:hover {
+  color: #007BFF; /* 호버 시 색상 변경 */
+}
+
 /* 프로젝트 카드 스타일 */
 .projects {
   display: flex;
