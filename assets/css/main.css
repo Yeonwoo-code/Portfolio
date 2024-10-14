@@ -80,12 +80,22 @@ nav ul.menu li a:hover {
   .project-card {
     width: 45%; /* 화면이 작을 때 카드 너비 조정 */
   }
+  main {
+    margin: 0 10px;
+  }
 }
 
 @media (max-width: 480px) {
   .project-card {
     width: 100%; /* 모바일 화면에서 카드 전체 너비 사용 */
   }
+    main {
+    margin: 0 80px;
+  }
+}
+main {
+  margin: 0 40px;
+  padding: 20px;
 }
 
 /* 헤더 및 이미지 스타일 */
