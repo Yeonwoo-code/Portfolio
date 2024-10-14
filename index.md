@@ -15,7 +15,7 @@ title: "My Portfolio"
 <!-- 프로젝트 카드 -->
 <div class="projects">
   <div class="project-card" data-category="web-development">
-    <img src="{{ site.baseurl }}/assets/images/project1.png" alt="Project 1 Image">
+    <img src="/assets/images/project1.png" alt="Project 1 Image">
     <h2>Project 1</h2>
     <p>A web development project description.</p>
   </div>
