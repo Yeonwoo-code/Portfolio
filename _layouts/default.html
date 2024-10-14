@@ -21,44 +21,18 @@
   <header>
     <div class="header-content">
       <h1>{{ site.title }}</h1>
-      <img src="{{ site.baseurl }}/assets/images/profile.jpg" alt="LEE" class="profile-img">
+      <img src="{{ site.baseurl }}/assets/images/your-face-image.jpg" alt="Your Image" class="profile-img">
     </div>
   </header>
 
+  <!-- 메인 콘텐츠 영역 -->
   <main>
     {{ content }}
-
-    <!-- 카테고리 버튼 -->
-    <div class="category-buttons">
-      <button onclick="filterPosts('all')">Show All</button>
-      <button onclick="filterPosts('web-development')">Web Development</button>
-      <button onclick="filterPosts('ai')">AI</button>
-    </div>
-
-    <!-- 프로젝트 카드 -->
-    <div class="projects">
-      <div class="project-card" data-category="web-development">
-        <img src="{{ site.baseurl }}/assets/images/project1.png" alt="Project 1">
-        <h2>Project 1</h2>
-        <p>Web development project description.</p>
-      </div>
-      <div class="project-card" data-category="ai">
-        <img src="{{ site.baseurl }}/assets/images/project2.png" alt="Project 2">
-        <h2>Project 2</h2>
-        <p>AI project description.</p>
-      </div>
-      <div class="project-card" data-category="web-development ai">
-        <img src="{{ site.baseurl }}/assets/images/project3.png" alt="Project 3">
-        <h2>Project 3</h2>
-        <p>Web development and AI project description.</p>
-      </div>
-    </div>
   </main>
 
+  <!-- 푸터 -->
   <footer>
     <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
-
-  <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
 </body>
 </html>
