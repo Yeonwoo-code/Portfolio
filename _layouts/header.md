@@ -1,3 +1,8 @@
+---
+layout: default
+title: header
+---
+  
   <!-- 중앙 정렬된 제목과 얼굴 이미지 -->
   <header>
     <div class="header-content">
