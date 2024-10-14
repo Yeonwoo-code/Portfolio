@@ -5,11 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
 </head>
 <body>
+  <!-- 네비게이션 바 -->
+  <nav>
+    <ul class="menu">
+      <li><a href="{{ site.baseurl }}/">Home</a></li>
+      <li><a href="{{ site.baseurl }}/about">About</a></li>
+      <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+      <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 중앙 정렬된 제목과 얼굴 이미지 -->
   <header>
-    <h1>{{ site.title }}</h1>
+    <div class="header-content">
+      <h1>{{ site.title }}</h1>
+      <img src="{{ site.baseurl }}/assets/images/your-face-image.jpg" alt="Your Image" class="profile-img">
+    </div>
   </header>
 
   <main>
@@ -17,7 +30,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2024 My Portfolio</p>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
 </body>
 </html>
