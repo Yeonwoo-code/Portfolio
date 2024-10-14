@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: default
 title: About ME
-permalink: /about/
 ---
 
 THIS IS LEE
