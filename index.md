@@ -11,8 +11,8 @@ title: "My Portfolio"
 <!-- 카테고리 필터 버튼 -->
 <div class="category-buttons">
   <button onclick="filterPosts('all')">Show All</button>
-  <button onclick="filterPosts('web-development')">Web Development</button>
-  <button onclick="filterPosts('ai')">AI</button>
+  <button onclick="filterPosts('Programing')">Web Development</button>
+  <button onclick="filterPosts('Bigdata')">AI</button>
 </div>
 
 {% include projects.html %}
