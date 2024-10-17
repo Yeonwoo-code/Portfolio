@@ -1,18 +1,26 @@
 <!-- 프로젝트 카드 -->
 <div class="projects">
-  <div class="project-card" data-category="Programing">
+  <div class="project-card" data-category="Programing" onclick="openModal('project1')">
     <img src="{{ site.baseurl }}/assets/images/project1.png" alt="Project 1 Image">
     <h2>Project 1</h2>
     <p>A web development project description.</p>
   </div>
 
-  <div class="project-card" data-category="Bigdata">
+  <div class="project-card" data-category="Bigdata" onclick="openModal('project2')">
     <h2>Project 2</h2>
     <p>An AI project description.</p>
   </div>
 
-  <div class="project-card" data-category="Programing Bigdata">
+  <div class="project-card" data-category="Programing Bigdata" onclick="openModal('project3')">
     <h2>Project 3</h2>
     <p>A web development and AI project description.</p>
+  </div>
+</div>
+
+<!-- 모달 창 -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="modal-details"></div>
   </div>
 </div>
