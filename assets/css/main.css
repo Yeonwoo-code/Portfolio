@@ -143,7 +143,7 @@ main {
   font-weight: bold;
   color: #333;
   margin-bottom: 20px; /* 제목 하단 여백 */
-  margin-left: 200px; /* 이미지 공간 확보를 위해 왼쪽 여백 추가 */
+  margin-left: 10px; /* 이미지 공간 확보를 위해 왼쪽 여백 추가 */
 }
 
 .header-content img.profile-img {
