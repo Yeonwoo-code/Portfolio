@@ -134,8 +134,8 @@ main {
 
 /* 헤더 및 이미지 스타일 */
 .header-content {
-  text-align: center; /* 헤더 중앙 정렬 */
   margin-top: 50px; /* 상단 여백 */
+  position: relative; /* 이미지와 글을 겹치도록 하기 위해 position 설정 */
 }
 
 .header-content h1 {
@@ -143,6 +143,7 @@ main {
   font-weight: bold;
   color: #333;
   margin-bottom: 20px; /* 제목 하단 여백 */
+  margin-left: 200px; /* 이미지 공간 확보를 위해 왼쪽 여백 추가 */
 }
 
 .header-content img.profile-img {
@@ -151,8 +152,6 @@ main {
   height: 180px; /* 이미지 높이 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 이미지에 그림자 추가 */
   transition: transform 0.3s ease; /* 호버 시 부드러운 전환 효과 */
-}
-
-.header-content img.profile-img:hover {
-  transform: scale(1.1); /* 호버 시 이미지 확대 효과 */
+  float: left; /* 이미지 왼쪽 정렬 */
+  margin-right: 20px; /* 텍스트와 이미지 간 간격 */
 }
