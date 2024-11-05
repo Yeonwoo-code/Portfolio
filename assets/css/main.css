@@ -155,3 +155,79 @@ main {
   float: left; /* 이미지 왼쪽 정렬 */
   margin-right: 20px; /* 텍스트와 이미지 간 간격 */
 }
+
+/* 전체 레이아웃 설정 */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  font-size: 2em;
+  color: #0073e6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about section {
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* 리스트 스타일 */
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.about li:last-child {
+  border-bottom: none;
+}
+
+/* 텍스트 강조 */
+.about strong {
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.about em {
+  color: #555;
+  font-style: italic;
+}
+
+.about span {
+  float: right;
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* 기타 스타일 */
+p {
+  margin: 5px 0;
+}
+
