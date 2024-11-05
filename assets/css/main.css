@@ -3,97 +3,98 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', sans-serif; /* 세련된 폰트 */
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 body {
   margin: 10px;
-  background-color: #f4f4f9; /* 부드러운 배경색 추가 */
-  color: #333; /* 기본 텍스트 색상 */
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* 네비게이션 바 스타일 */
+nav {
+  background-color: #333;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul.menu li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul.menu li a:hover {
+  color: #007BFF;
+  background-color: rgba(0, 123, 255, 0.1);
 }
 
 /* 카테고리 버튼 스타일 */
 .category-buttons {
   margin-bottom: 20px;
-  text-align: center; /* 버튼을 중앙에 배치 */
+  text-align: center;
 }
 
 .category-buttons button {
-  padding: 12px 25px;
+  padding: 10px 20px;
   margin: 8px;
   border: none;
   background-color: #007BFF;
   color: white;
   cursor: pointer;
-  border-radius: 25px; /* 둥글게 더 강조 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* 호버 시 부드러운 전환 효과 */
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .category-buttons button:hover {
   background-color: #0056b3;
-  transform: scale(1.05); /* 호버 시 살짝 확대 효과 */
-}
-
-/* 네비게이션 바 스타일 */
-nav {
-  background-color: #333; /* 배경 색상 */
-  padding: 15px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 네비게이션 그림자 효과 */
-  position: sticky; /* 상단에 고정 */
-  top: 0;
-  z-index: 1000; /* 다른 요소 위에 표시 */
-}
-
-nav ul.menu {
-  list-style: none; /* 목록 스타일 제거 */
-  padding: 0;
-  margin: 0;
-  text-align: center; /* 메뉴 중앙 정렬 */
-}
-
-nav ul.menu li {
-  display: inline-block; /* 가로로 배치 */
-  margin: 0 20px;
-}
-
-nav ul.menu li a {
-  text-decoration: none;
-  color: white; /* 링크 색상 */
-  font-weight: bold;
-  font-size: 1.2em;
-  padding: 10px 20px;
-  transition: color 0.3s ease, background-color 0.3s ease; /* 부드러운 전환 효과 */
-  border-radius: 5px;
-}
-
-nav ul.menu li a:hover {
-  color: #007BFF; /* 호버 시 색상 변경 */
-  background-color: rgba(0, 123, 255, 0.1); /* 배경색 추가 */
+  transform: scale(1.05);
 }
 
 /* 프로젝트 카드 스타일 */
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 15px;
   justify-content: space-around;
   padding: 20px 0;
 }
 
 .project-card {
-  width: 28%;
+  width: 100%;
+  max-width: 300px;
   border: 1px solid #ddd;
-  border-radius: 15px; /* 둥근 모서리 */
+  border-radius: 15px;
   text-align: center;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* 부드러운 전환 효과 */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .project-card:hover {
-  transform: translateY(-10px); /* 카드 살짝 위로 이동 */
-  opacity: 0.9; /* 살짝 투명도 변경 */
+  transform: translateY(-10px);
+  opacity: 0.9;
 }
 
 .project-card img {
@@ -102,63 +103,10 @@ nav ul.menu li a:hover {
   border-radius: 15px;
 }
 
-.project-card.hidden {
-  display: none; /* 숨김 처리 */
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-  main {
-    margin: 0 20px;
-  }
-
-  .project-card {
-    width: 45%;
-  }
-}
-
-@media (max-width: 480px) {
-  main {
-    margin: 0 10px;
-  }
-
-  .project-card {
-    width: 100%;
-  }
-}
-
-main {
-  margin: 0 40px;
-  padding: 20px;
-}
-
-/* 헤더 및 이미지 스타일 */
-.header-content {
-  margin-top: 50px; /* 상단 여백 */
-  position: relative; /* 이미지와 글을 겹치도록 하기 위해 position 설정 */
-}
-
-.header-content h1 {
-  font-size: 3em; /* 제목 크기 더 크게 */
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px; /* 제목 하단 여백 */
-  margin-left: 10px; /* 이미지 공간 확보를 위해 왼쪽 여백 추가 */
-}
-
-.header-content img.profile-img {
-  border-radius: 50%; /* 얼굴 이미지를 둥글게 */
-  width: 180px; /* 이미지 너비 */
-  height: 180px; /* 이미지 높이 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 이미지에 그림자 추가 */
-  transition: transform 0.3s ease; /* 호버 시 부드러운 전환 효과 */
-  float: left; /* 이미지 왼쪽 정렬 */
-  margin-right: 20px; /* 텍스트와 이미지 간 간격 */
-}
-
+/* about 섹션 스타일 */
 .about {
   max-width: 90%;
-  margin: 10%;
+  margin: auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
@@ -184,7 +132,6 @@ main {
   margin-bottom: 10px;
 }
 
-/* 리스트 스타일 */
 .about ul {
   list-style: none;
   padding: 0;
@@ -199,7 +146,6 @@ main {
   border-bottom: none;
 }
 
-/* 텍스트 강조 */
 .about strong {
   color: #0073e6;
   font-weight: bold;
@@ -216,8 +162,82 @@ main {
   font-size: 0.9em;
 }
 
-/* 기타 스타일 */
-p {
-  margin: 5px 0;
+/* 메인 레이아웃 */
+main {
+  margin: 0 40px;
+  padding: 20px;
 }
 
+.header-content {
+  margin-top: 50px;
+  position: relative;
+}
+
+.header-content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.header-content img.profile-img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  float: left;
+  margin-right: 20px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  nav ul.menu li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .project-card {
+    width: 45%;
+  }
+
+  .header-content h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .header-content img.profile-img {
+    width: 120px;
+    height: 120px;
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .about {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin: 0 10px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .category-buttons button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .about {
+    padding: 15px;
+  }
+
+  .header-content h1 {
+    font-size: 1.8em;
+  }
+}
