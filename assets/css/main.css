@@ -157,8 +157,8 @@ main {
 }
 
 .about {
-  max-width: 80%;
-  margin: auto;
+  max-width: 90%;
+  margin: 10%;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
