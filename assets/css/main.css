@@ -156,16 +156,6 @@ main {
   margin-right: 20px; /* 텍스트와 이미지 간 간격 */
 }
 
-/* 전체 레이아웃 설정 */
-body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
 .about {
   max-width: 800px;
   margin: 0 auto;
