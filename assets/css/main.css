@@ -89,6 +89,8 @@ body {
   font-weight: bold; /* 굵은 글꼴 */
   color: #aaa; /* 닫기 버튼 기본 색상 */
   cursor: pointer; /* 클릭 가능한 커서 */
+  padding: 20px; /* 내부 여백 추가 */
+  box-sizing: border-box; /* 패딩 포함 계산 */
 }
 
 .modal-content .close:hover {
