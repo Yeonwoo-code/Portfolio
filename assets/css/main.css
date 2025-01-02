@@ -159,6 +159,7 @@ nav ul.menu li a:hover {
  text-align: left;
 }
 .project-card:hover {
+  cursor: pointer; /* 손가락 모양 */
   transform: translateY(-10px); /* 카드 살짝 위로 이동 */
   opacity: 0.9; /* 살짝 투명도 변경 */
 }
