@@ -150,6 +150,7 @@ nav ul.menu li a:hover {
   border: 1px solid #ddd;
   border-radius: 15px; /* 둥근 모서리 */
   text-align: center;
+  cursor: pointer; /* 마우스를 올렸을 때 손가락 모양 */
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* 부드러운 전환 효과 */
