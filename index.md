@@ -10,7 +10,7 @@ title: "My Portfolio"
 <div class="category-buttons">
   <button onclick="filterPosts('all')">Show All</button>
   <button onclick="filterPosts('Programing')"> Programing </button>
-  <button onclick="filterPosts('Blog')"> Etc. </button>
+  <button onclick="filterPosts('ETC')"> Etc. </button>
 </div>
 
 {% include projects.html %}
