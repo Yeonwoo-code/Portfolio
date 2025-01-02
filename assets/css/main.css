@@ -17,9 +17,6 @@ body {
   margin-bottom: 20px;
   text-align: center; /* 버튼을 중앙에 배치 */
 }
-.project-card .p {
-  text-align: left; /* 전체 텍스트를 왼쪽 정렬 */
-}
 
 .category-buttons button {
   padding: 12px 25px;
