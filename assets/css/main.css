@@ -73,6 +73,13 @@ body {
   animation: modal-fade-in 0.3s ease; /* 등장 애니메이션 */
 }
 
+.modal-content img {
+  max-width: 100%; /* 모달 콘텐츠 영역에 맞게 조정 */
+  height: auto;    /* 비율 유지 */
+  display: block;  /* 블록 요소로 표시 */
+  margin: 0 auto;  /* 가운데 정렬 */
+}
+
 /* 닫기 버튼 */
 .modal-content .close {
   position: absolute; /* 콘텐츠의 절대 위치 */
